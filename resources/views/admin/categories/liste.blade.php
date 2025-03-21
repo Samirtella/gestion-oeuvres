@@ -16,7 +16,7 @@
             @foreach ($categories as $categorie)
                 <tr>
                     <td>{{ $categorie->nom }}</td>
-                    <td class="text-nowrap">{{categorie->description }}</td>
+                    <td class="text-nowrap">{{$categorie->description }}</td>
                     <td class="text-nowrap">
                         <a href="{{ route('admin.categories.modifier', $categorie->id) }}" class=" btn btn-primary">Modifier</a>
                         <form action="{{ route('admin.categorie.supprimer', $categorie->id) }}" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer cette categorie ?');">
