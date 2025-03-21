@@ -15,7 +15,7 @@ class Categorie extends Model
 
     public function oeuvres()
     {
-        return $this->hasMany(Oeuvre::class, 'categorie_id');
+        return $this->hasMany(Oeuvres::class, 'categorie_id');
     }
 }
 
