@@ -10,9 +10,9 @@ class Oeuvres extends Model
         'titre',
         'artiste',
         'categorie_id',
-        'année de fabrication',
-        'date d’acquisition',
-        'prix estimé',
+        'année_de_fabrication',
+        'date_d_acquisition',
+        'prix_estimé',
         'description',
         'photo'
     ];

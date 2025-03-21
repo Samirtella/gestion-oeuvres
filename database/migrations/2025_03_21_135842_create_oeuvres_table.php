@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('titre', 255);
             $table->foreignId('categorie_id')->nullable()->constrained('categories');
             $table->string('artiste', 255);
-            $table->string('année de fabrication', 255);
-            $table->date('date d’acquisition');
-            $table->string('prix estimé',255);
+            $table->string('année_de_fabrication', 255);
+            $table->date('date_d_acquisition');
+            $table->string('prix_estimé',255);
             $table->string('description')->nullable();
             $table->string('photo', 255);
             $table->timestamps();
