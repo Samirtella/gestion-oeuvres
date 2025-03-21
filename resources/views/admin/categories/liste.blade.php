@@ -19,7 +19,7 @@
                     <td class="text-nowrap">{{$categorie->description }}</td>
                     <td class="text-nowrap">
                         <a href="{{ route('admin.categories.modifier', $categorie->id) }}" class=" btn btn-primary">Modifier</a>
-                        <form action="{{ route('admin.categorie.supprimer', $categorie->id) }}" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer cette categorie ?');">
+                        <form action="{{ route('admin.categories.supprimer', $categorie->id) }}" method="POST" onsubmit="return confirm('Voulez-vous vraiment supprimer cette categorie ?');">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Supprimer</button>
